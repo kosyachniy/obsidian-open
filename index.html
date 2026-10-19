@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'none'; worker-src 'none'; base-uri 'none'; form-action 'none'; require-trusted-types-for 'script'; trusted-types 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Открыть заметку в Obsidian</title>
+<link rel="stylesheet" href="style.css">
+<script type="module" src="app.js"></script>
+</head>
+<body>
+<main>
+  <h1>Открыть заметку в Obsidian</h1>
+  <p id="pending">Проверяем ссылку…</p>
+
+  <section id="ready" hidden>
+    <p>Пытаемся открыть заметку в приложении Obsidian. Если оно не открылось, нажмите кнопку.</p>
+    <button type="button" id="open-button">Открыть в Obsidian</button>
+    <h2>Если заметка не открывается</h2>
+    <ul>
+      <li>iPhone и iPad: если Safari спросит, открыть ли страницу в «Obsidian», нажмите «Открыть».</li>
+      <li>Telegram: встроенный браузер Telegram может не открывать приложения. Откройте эту страницу в Safari — через меню встроенного браузера или скопировав ссылку из чата в адресную строку Safari — и нажмите кнопку ещё раз.</li>
+      <li>Проверьте, что приложение Obsidian установлено и заметка уже есть на этом устройстве.</li>
+    </ul>
+  </section>
+
+  <section id="error" role="alert" hidden>
+    <h2>Ссылка не подходит</h2>
+    <p>Ссылка повреждена или имеет неподдерживаемый формат, поэтому заметку нельзя открыть. Попросите прислать ссылку ещё раз.</p>
+  </section>
+
+  <noscript><p>Чтобы открыть заметку, включите JavaScript.</p></noscript>
+</main>
+</body>
+</html>

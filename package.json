@@ -1,0 +1,9 @@
+{
+  "name": "obsidian-open",
+  "private": true,
+  "description": "Static landing page that opens an Obsidian note from a URL fragment",
+  "type": "module",
+  "scripts": {
+    "test": "node --test --test-reporter=spec test/*.test.js"
+  }
+}
